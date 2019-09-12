@@ -1,10 +1,10 @@
 import React from "react";
 function Timer(props) {
   const totalMiliSecond = props.miliSeconds;
-  var secondsInSeconds = totalMiliSecond / 1000;
+  var secondsInSeconds = Math.floor(totalMiliSecond / 1000);
   var hours = Math.floor(secondsInSeconds / 3600);
   var minutes = Math.floor((secondsInSeconds - hours * 3600) / 60);
-  var seconds = Math.floor(secondsInSeconds - hours * 3600 - minutes * 60);
+  var seconds = secondsInSeconds - hours * 3600 - minutes * 60;
   console.log(seconds);
   if (hours < 10) {
     hours = "0" + hours;

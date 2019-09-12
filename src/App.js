@@ -1,7 +1,7 @@
 import React from "react";
 import Timer from "./Timer";
 import "./App.css";
-const miliSeconds = 5144020; //in milliseconds
+const miliSeconds = 5144320; //in milliseconds
 function App() {
   return (
     <div className="block">
